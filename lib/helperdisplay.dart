@@ -34,8 +34,8 @@ class WorkInstructionWidget extends GetView<WorkInstructionController> {
     List<WorkInstructionItem> lstWII = [];
     for (int i = 0; i < iStepCount; i++) {
       lstWII.clear();
+      lstItems.clear();
       for (int j = 0; j < iDataCollectionItems; j++) {
-        lstItems.clear();
         iTmp = 0;
         try {
           do { iTmp++; } while(data["WorkInstruction"]["Sections"][0]["Steps"][i]["DataCollectionItems"][j]["Data"]["Items"][iTmp-1] != Null);
